@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "FarsiCP",
+  "version": "1.0.0",
+  "description": "translate competitive programming problems",
+  "permissions":[
+    "*://*.github.io/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/*"],
+      "js": ["codeforces.js"]
+    }
+  ]
+
+}
