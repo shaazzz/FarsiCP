@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "FarsiCP",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "translate competitive programming problems",
   "permissions":[
     "*://*.github.io/*"
