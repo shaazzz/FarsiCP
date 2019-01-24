@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 exclude: [ apps ]
+gems:
+  - jekyll-redirect-from
