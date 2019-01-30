@@ -9,6 +9,9 @@ function addButton(address,value){
 
 async function loadProblem(probid){
     let adr = farsiCP + 'CF/' + probid + '/statement';
+    if (probid.substr(0,3)=='SGU'){
+	adr = farsiCP + 'SGU/' + probid.substr(3) + '/statement';
+    }
     console.log(adr);
     let html="salam";
     try{
@@ -22,7 +25,10 @@ async function loadProblem(probid){
         if (e.message=='Not found'){
             let editbtn = document.createElement('li');
             let btnList = document.getElementsByClassName('second-level-menu-list')[0];
-            editbtn.innerHTML = '<a href="https://github.com/shaazzz/FarsiCP/new/master/CF/'+probid+'">Tarjome</a>';
+	    if (probid.substr(0,3)=='SGU')
+		editbtn.innerHTML = '<a href="https://github.com/shaazzz/FarsiCP/new/master/SGU/'+probid.substr(3)+'">Tarjome</a>'; 
+	    else
+		editbtn.innerHTML = '<a href="https://github.com/shaazzz/FarsiCP/new/master/CF/'+probid+'">Tarjome</a>';
             btnList.appendChild(editbtn);
         }    
         console.log(e);
@@ -33,7 +39,7 @@ async function loadProblem(probid){
     console.log(dom);
     let farsiDiv = dom.getElementById('problem-statement');
     console.log(farsiDiv);
-    let englishDiv = document.getElementsByClassName('problem-statement')[0];
+    let englishDiv = document.getElementsByClassName(probid.substr(0,3)=='SGU'?'problemindexholder':'problem-statement')[0];
     console.log(englishDiv);
     englishDiv.outerHTML = farsiDiv.outerHTML;
     let mathsc = document.createElement('script');
@@ -48,7 +54,10 @@ async function loadProblem(probid){
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, "problem-statement"]);`;
     document.body.appendChild(mathsc);
     document.documentElement.scrollTop = 0;
-    addButton('https://github.com/shaazzz/FarsiCP/edit/master/CF/'+probid+'/statement.md','virayesh');
+    if (probid.substr(0,3)=='SGU')
+	addButton('href="https://github.com/shaazzz/FarsiCP/edit/master/SGU/'+probid.substr(3)+'/statement.md','Virayesh');
+    else
+	addButton('https://github.com/shaazzz/FarsiCP/edit/master/CF/'+probid+'/statement.md','virayesh');
     addButton(location.pathname+'?farsi=false','english');
 }
 
@@ -60,7 +69,9 @@ async function main(){
     else if(location.pathname.search(/\/contest\/.*\/problem\/.*/)!=-1){
 	probid = location.pathname.replace(/(problem\/|contest\/|\/)/g,'');
     }
-    else{
+    else if(location.pathname.search(/\/problemsets\/acmsguru\/problem\/99999\/.*/)!=-1){
+	probid = 'SGU'+location.pathname.replace(/(problemsets\/|problem\/|acmsguru\/|99999\/|\/)/g,'');
+    }else{
         return;
     }
     let urlparam = new URLSearchParams(location.search);
