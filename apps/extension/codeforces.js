@@ -47,7 +47,7 @@ async function loadProblem(probid){
         console.log(MathJax);
         MathJax.Hub.Config({
            tex2jax: {
-             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+             inlineMath: [ ['$','$'] ],
              processEscapes: true
            }
         });
