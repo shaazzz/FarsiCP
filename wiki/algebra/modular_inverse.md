@@ -13,4 +13,7 @@ $$a \cdot x \equiv 1 \mod m $$
 $\frac{p,q}$
 مقدار $p\cdot q^{-1} \mod m$
 خواسته می شود. با توجه به این که :  
-$$ \(a\cdot b^{-1}\) \cdot \(c\cdot d^{-1}\) \equiv \(a\cdot c\)\cdot \(b \cdot d^{-1}\) \mod m$$  
+$$ (a\cdot b^{-1}) \cdot (c\cdot d^{-1}) \equiv (a\cdot c)\cdot (b \cdot d)^{-1} \mod m$$  
+و این که :  
+$$ (a\cdot b^{-1}) + (c\cdot d^{-1}) \equiv (a\cdot d + c \cdot b) \cdot (b \cdot d)^{-1} \mod m$$  
+می توانیم هنگام جمع و ضرب دو کسر عدد همنهشت با آن ها به پیمانه $m$ را جمع و ضرب کنیم و هنگام تقسیم ، معکوس عدد همنهشت با مخرج را در صورت ضرب کنیم و به این صورت عدد همنهشت با یک کسر به پیمانه $m$ را بدست آوریم.
