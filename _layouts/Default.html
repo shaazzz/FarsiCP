@@ -8,15 +8,30 @@
              processEscapes: true
            }
          });
-       </script>
-       <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <style>
+      .nav-button {
+          border: none;
+          display: inline-block;
+          padding: 8px 16px;
+          vertical-align: middle;
+          overflow: hidden;
+          text-decoration: none;
+          color: inherit;
+          background-color: inherit;
+          text-align: center;
+          cursor: pointer;
+          white-space: nowrap;
+      }
+    </style>
   </head>
-  <body>
-    <div id="topnav" style="position: fixed; top: 0px;background-color:blue">
-      <a href="/FarsiCP">خانه</a>
-      <a href="/FarsiCP/wiki">ویکی</a>
+  <body dir="rtl">
+    <div id="topnav" style="position: fixed; top: 0px;background-color:#00ffff;height:100%;color:white">
+      <a class="nav-button" href="/FarsiCP">خانه</a>
+      <a class="nav-button" href="/FarsiCP/wiki">ویکی</a>
     </div>
-    <div id="main" dir="rtl">
+    <div id="main">
       {{content}}
     </div>
   </body>
