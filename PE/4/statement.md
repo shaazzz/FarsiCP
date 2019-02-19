@@ -1,7 +1,7 @@
 ---
 layout: problem
 difficulty: 5
-title: بزرگترین حاصل‌ضرب متقارن
+title: بزرگترین حاصل ضرب متقارن
 problemId: 4
 answer: 906609
 ---
