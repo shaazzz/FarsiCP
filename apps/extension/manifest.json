@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "FarsiCP",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "translate competitive programming problems",
   "permissions":[
     "*://*.github.io/*"
@@ -10,6 +10,10 @@
     {
       "matches": ["*://codeforces.com/*"],
       "js": ["codeforces.js"]
+    },
+    {
+      "matches": ["*://projecteuler.net/*"],
+      "js": ["projecteuler.js"]
     }
   ]
 
