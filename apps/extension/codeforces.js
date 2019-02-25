@@ -7,10 +7,14 @@ function addButton(address,value){
     btnList.appendChild(editbtn);
 }
 
-async function loadProblem(probid){
+async function loadProblem(probid,options){
+    if (!options) options = {};
     let adr = farsiCP + 'CF/' + probid + '/statement';
     if (probid.substr(0,3)=='SGU'){
 	adr = farsiCP + 'SGU/' + probid.substr(3) + '/statement';
+    }
+    if (options.adr){
+    	adr = options.adr;
     }
     console.log(adr);
     let html="salam";
@@ -37,7 +41,13 @@ async function loadProblem(probid){
     console.log(html);
     let dom = (new DOMParser).parseFromString(html,'text/html');
     console.log(dom);
+    if (dom.title == "Redirecting…"){
+    	let gto = dom.getElementsByTagName('link')[0].href;
+    	await loadProblem(probid,{adr:gto});
+    	return;
+    }
     let farsiDiv = dom.getElementById('problem-statement');
+    
     console.log(farsiDiv);
     let englishDiv = document.getElementsByClassName(probid.substr(0,3)=='SGU'?'problemindexholder':'problem-statement')[0];
     console.log(englishDiv);
