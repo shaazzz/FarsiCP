@@ -2,5 +2,5 @@
 layout: Default
 ---
 
-# [الگوریتم](algorithms)
+# [الگوریتم](algorithm)
 # [گراف](graph)
