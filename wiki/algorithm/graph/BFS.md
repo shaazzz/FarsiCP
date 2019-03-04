@@ -19,23 +19,26 @@ BFS را میتوان مانند پخش شدن آتش در یک گراف توض�
 فرض می کنیم این راس u باشد. بعد به همسایه هایی از u می رویم که یال u به آن ها وارد شده( اگر گراف جهت دار بود) و اگر بعضی از این همسایه ها را قبلا ندیده بودیم ، mark آن ها را true کرده و به queue اضافه می کنیم.
 
 ```C++
-vector<vector<int>> adj;  // adjacency list representation
+const int MAXN = 1e5+5;
+vector<int> adj[MAXN];  // adjacency list representation
 int n; // number of nodes
 int s; // source vertex
 
 queue<int> q;
-vector<bool> used(n);
-vector<int> d(n), p(n);
+bool mark[MAXN];
+int d[MAXN], p[MAXN];
+
+//-------------
 
 q.push(s);
-used[s] = true;
+mark[s] = true;
 p[s] = -1;
 while (!q.empty()) {
     int v = q.front();
     q.pop();
     for (int u : adj[v]) {
-        if (!used[u]) {
-            used[u] = true;
+        if (!mark[u]) {
+            mark[u] = true;
             q.push(u);
             d[u] = d[v] + 1;
             p[u] = v;
