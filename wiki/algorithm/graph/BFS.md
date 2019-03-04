@@ -13,6 +13,8 @@ BFS را میتوان مانند پخش شدن آتش در یک گراف توض�
 در واقع سطح بندی رئوس گراف در BFS این گونه است که در سطح صفر ام ریشه (v) وجود دارد و تمام راس های مجاور v را در سطح اول قرار می دهیم.(اگر گراف جهت دار باشد ، باید همسایه هایی از v را در سطح اول قرار بدهیم که یال v به آن ها وارد شده است)
 و برای سطح i+1 ام راس u که همسایه یکی از رئوس سطح قبلی (iام) است را در این سطح قرار می دهیم به شرطی که راس u در هیچ سطر دیگری نیامده باشد. به عبارت دیگر راس ها را براساس کوتاه ترین فاصله از v سطح بندی می کنیم و برای پیمایش گراف به ترتیب سطح و در هر سطح به ترتیب دلخواهی وارد راس ها می شویم. پس اولین باری که یک راس را می بینیم، با کمترین فاصله از v به آن رسیده ایم.
 
+## پیاده سازی
+
 برای پیاده سازی یک صف(queue) که شامل تمام راس ها است و یک آرایه Boolean (که اسمش را []mark می گذاریم) شامل راس های دیده شده در نظر میگیریم.
 در ابتدا راس v را در queue اضافه می کنیم (push) و mark[v]=true و برای بقیه رئوس مانند mark[u]=false،u.
 برنامه تا زمانی که  queue خالی نشده ادامه می یابد و در هر مرحله راس ابتدایی را از queue برمیداریم (pop).
@@ -47,7 +49,7 @@ while (!q.empty()) {
 }
 ```
 
-کاربرد های BFS:
+## کاربرد ها
 
 ۱. پیدا کردن کوتاه ترین مسیر از راس s به هر راس دیگری در گراف بدون وزن
 
@@ -83,3 +85,27 @@ x
 است. ( به ازای تمام
 x
 ها ) اکنون اگر به ازای یک x خاص، تعداد به دست آمده ۱ باشد، راسی که از a فاصله x دارد باید در تمام کوتاه ترین مسیر ها آمده باشد. ( یال نیز مشابه است )
+
+## مسائل تمرینی
+* [SPOJ: AKBAR](http://spoj.com/problems/AKBAR)
+* [SPOJ: NAKANJ](http://www.spoj.com/problems/NAKANJ/)
+* [SPOJ: WATER](http://www.spoj.com/problems/WATER)
+* [SPOJ: MICE AND MAZE](http://www.spoj.com/problems/MICEMAZE/)
+* [Timus: Caravans](http://acm.timus.ru/problem.aspx?space=1&num=2034)
+* [DevSkills - Holloween Party](https://devskill.com/CodingProblems/ViewProblem/60)
+* [DevSkills - Ohani And The Link Cut Tree](https://devskill.com/CodingProblems/ViewProblem/150)
+* [SPOJ - Spiky Mazes](http://www.spoj.com/problems/SPIKES/)
+* [SPOJ - Four Chips (hard)](http://www.spoj.com/problems/ADV04F1/)
+* [SPOJ - Inversion Sort](http://www.spoj.com/problems/INVESORT/)
+* [Codeforces - Shortest Path](http://codeforces.com/contest/59/problem/E)
+* [SPOJ - Yet Another Multiple Problem](http://www.spoj.com/problems/MULTII/)
+* [UVA 11392 - Binary 3xType Multiple](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2387)
+* [UVA 10968 - KuPellaKeS](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1909)
+* [Codeforces - Police Stations](http://codeforces.com/contest/796/problem/D)
+* [Codeforces - Okabe and City](http://codeforces.com/contest/821/problem/D)
+* [SPOJ - Find the Treasure](http://www.spoj.com/problems/DIGOKEYS/)
+* [Codeforces - Bear and Forgotten Tree 2](http://codeforces.com/contest/653/problem/E)
+* [Codeforces - Cycle in Maze](http://codeforces.com/contest/769/problem/C)
+* [UVA - 11312 - Flipping Frustration](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2287)
+* [SPOJ - Ada and Cycle](http://www.spoj.com/problems/ADACYCLE/)
+
