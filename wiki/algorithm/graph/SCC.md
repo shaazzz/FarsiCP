@@ -108,3 +108,6 @@ int main() {
 * [SPOJ - Capital City](http://www.spoj.com/problems/CAPCITY/)
 * [Codeforces - Scheme](http://codeforces.com/contest/22/problem/E)
 * [SPOJ - Ada and Panels](http://www.spoj.com/problems/ADAPANEL/)
+
+[dfs](DFS)
+[جستجوی عمق اول](DFS)
