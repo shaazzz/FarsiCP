@@ -1,12 +1,12 @@
 ---
 layout: problem
 difficulty: 5
-title: "Names scores"
+title: "امتیازات نام"
 problemId: 22
 answer: 871198282
 ---
-Using [names.txt]({{ site.baseurl }}project/resources/p022_names.txt) (right click and 'Save Link/Target As...'), a 46K text file containing over five-thousand first names, begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
+ فایل  [names.txt]({{ site.baseurl }}project/resources/p022_names.txt)  (بر روی فایل کلیک راست کنید و گزینه ی save link as .. ر ا انتخاب و مسیر خود را مشخص کنید)  شامل بیش از پنج هزار نام است. ابتدا آن را براساس حروف الفبا مرتب کرده و از اولین نام شروع کرده و ارزش هر نام را در جایگاه آن ضرب کرده تا امتیاز نام بدست آید.
 
-For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
+برای مثال، وقتی نام ها مرتب میشوند COLIN که ارزش آن $3 + 15 + 12 + 9 + 14 = 53,$ است ، 938امین نام در بین نام ها میباشد. در نتیجه امتیاز نام COLIN $938 \times 53 = 49714$ است.
 
-What is the total of all the name scores in the file?
+مجموع امتیازات نام تمام نام های فایل چیست؟ 
