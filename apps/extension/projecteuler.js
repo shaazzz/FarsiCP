@@ -1,9 +1,10 @@
 var farsiCP = "https://shaazzz.github.io/FarsiCP/";
 
 function addButton(address,value){
-    let editbtn = document.createElement('li');
-    let btnList = document.getElementById('nav').children[0];
-    editbtn.innerHTML = `<a href="${address}">${value}</a>`;
+    let editbtn = document.createElement('a');
+    let btnList = document.getElementById('navigation');
+    editbtn.href = address;
+    editbtn.innerText = value;
     btnList.insertBefore(editbtn,btnList.childNodes[0]);
 }
 

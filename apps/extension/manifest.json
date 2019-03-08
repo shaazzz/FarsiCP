@@ -14,6 +14,10 @@
     {
       "matches": ["*://projecteuler.net/*"],
       "js": ["projecteuler.js"]
+    },
+    {
+      "matches": ["*://cp-algorithms.com/*"],
+      "js": ["cpalgo.js"]	
     }
   ]
 
