@@ -52,5 +52,81 @@ Topol sort به دست آورده ایم ، اجرا می کنیم. برای ه�
     در واقع اگر [st[u]<st[v باشد ، آنگاه v از بچه های u است.
     یال میانی (Cross edge) -> اگر v نه جد u باشد نه از نسل آن، آنگاه به یال (Cross edge (u,v می گویند.
     توجه : Cross edge ها و Forward edge ها فقط در گراف های جهت دار موجود هستند. 
-Code DFS و کد مربوط به st و ft آن باید زده شود.
 
+## پیاده سازی
+```C++
+vector<vector<int>> adj; // graph represented as an adjacency list
+int n; // number of vertices
+
+vector<bool> visited;
+
+void dfs(int v) {
+    visited[v] = true;
+    for (int u : adj[v]) {
+        if (!visited[u])
+            dfs(u);
+    }
+}
+```
+این ساده ترین دی اف اس ممکن است. همان طور که در کاربرد ها صحبت کردیم، ممکن است محاسبه starting time یا چیز های دیگر مفید باشد. این پیاده سازی دی اف اس با محاسبه ی مقادیر کاربردی در بخش کاربرد هاست.
+```C++
+vector<vector<int>> adj; // graph represented as an adjacency list
+int n; // number of vertices
+
+vector<int> color;
+
+vector<int> time_in, time_out;
+int dfs_timer = 0;
+
+void dfs(int v) {
+    time_in[v] = dfs_timer++;
+    color[v] = 1;
+    for (int u : adj[v])
+        if (color[u] == 0)
+            dfs(u);
+    color[v] = 2;
+    time_out[v] = dfs_timer++;
+}
+```
+
+## مسائل تمرینی
+
+* [SPOJ: ABCPATH](http://www.spoj.com/problems/ABCPATH/)
+* [SPOJ: EAGLE1](http://www.spoj.com/problems/EAGLE1/)
+* [Codeforces: Kefa and Park](http://codeforces.com/problemset/problem/580/C)
+* [Timus:Werewolf](http://acm.timus.ru/problem.aspx?space=1&num=1242)
+* [Timus:Penguin Avia](http://acm.timus.ru/problem.aspx?space=1&num=1709)
+* [Timus:Two Teams](http://acm.timus.ru/problem.aspx?space=1&num=1106)
+* [SPOJ - Ada and Island](http://www.spoj.com/problems/ADASEA/)
+* [UVA 657 - The die is cast](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=598)
+* [SPOJ - Sheep](http://www.spoj.com/problems/KOZE/)
+* [SPOJ - Path of the Rightenous Man](http://www.spoj.com/problems/RIOI_2_3/)
+* [SPOJ - Validate the Maze](http://www.spoj.com/problems/MAKEMAZE/)
+* [SPOJ - Ghosts having Fun](http://www.spoj.com/problems/GHOSTS/)
+* [Codeforces - Underground Lab](http://codeforces.com/contest/781/problem/C)
+* [DevSkills - Maze Tester](https://devskill.com/CodingProblems/ViewProblem/3)
+* [DevSkills - Tourist](https://devskill.com/CodingProblems/ViewProblem/17)
+* [Codeforces - Anton and Tree](http://codeforces.com/contest/734/problem/E)
+* [Codeforces - Transformation: From A to B](http://codeforces.com/contest/727/problem/A)
+* [Codeforces - One Way Reform](http://codeforces.com/contest/723/problem/E)
+* [Codeforces - Centroids](http://codeforces.com/contest/709/problem/E)
+* [Codeforces - Generate a String](http://codeforces.com/contest/710/problem/E)
+* [Codeforces - Broken Tree](http://codeforces.com/contest/758/problem/E)
+* [Codeforces - Dasha and Puzzle](http://codeforces.com/contest/761/problem/E)
+* [Codeforces - Making genome In Berland](http://codeforces.com/contest/638/problem/B)
+* [Codeforces - Road Improvement](http://codeforces.com/contest/638/problem/C)
+* [Codeforces - Garland](http://codeforces.com/contest/767/problem/C)
+* [Codeforces - Labeling Cities](http://codeforces.com/contest/794/problem/D)
+* [Codeforces - Send the Fool Futher!](http://codeforces.com/contest/802/problem/K)
+* [Codeforces - The tag Game](http://codeforces.com/contest/813/problem/C)
+* [Codeforces - Leha and Another game about graphs](http://codeforces.com/contest/841/problem/D)
+* [Codeforces - Shortest path problem](http://codeforces.com/contest/845/problem/G)
+* [Codeforces - Upgrading Tree](http://codeforces.com/contest/844/problem/E)
+* [Codeforces - From Y to Y](http://codeforces.com/contest/849/problem/C)
+* [Codeforces - Chemistry in Berland](http://codeforces.com/contest/846/problem/E)
+* [Codeforces - Wizards Tour](http://codeforces.com/contest/861/problem/F)
+* [Codeforces - Ring Road](http://codeforces.com/contest/24/problem/A)
+* [Codeforces - Mail Stamps](http://codeforces.com/contest/29/problem/C)
+* [Codeforces - Ant on the Tree](http://codeforces.com/contest/29/problem/D)
+* [SPOJ - Cactus](http://www.spoj.com/problems/CAC/)
+* [SPOJ - Mixing Chemicals](http://www.spoj.com/problems/AMR10J/)
