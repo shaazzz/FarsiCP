@@ -73,5 +73,8 @@ layout: Default
 * گراف ها
   * پیمایش گراف
     * [جستجوی سطح اول](graph/BFS)
+    * [جستجوی عمق اول](graph/DFS)
   * همبندی
+    * [مولفه های همبندی](graph/onnected_components)
+    * [پیدا کردن یال های برشی](graph/find_bridge)
     * [مولفه های قویا همبند و گراف آن](graph/SCC)
