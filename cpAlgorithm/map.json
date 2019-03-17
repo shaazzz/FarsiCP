@@ -3,5 +3,6 @@
   "/algebra/module-inverse.html": "wiki/algorithm/algebra/modular_inverse",
   "/graph/breadth-first-search.html": "wiki/algorithm/graph/BFS",
   "/graph/strongly-connected-components.html": "wiki/algorithm/graph/SCC",
-  "/graph/search-for-connected-components.html": "wiki/algorithm/graph/connected_components"
+  "/graph/search-for-connected-components.html": "wiki/algorithm/graph/connected_components",
+  "/graph/bridge-searching.html": "/wiki/algorithm/graph/find_bridge"
 }
