@@ -71,3 +71,16 @@ void find_bridges() {
 
 مهم ترین تابع در این کد تابع ()find_bridges است که مقدار دهی اولیه و همچنین الگوریتم DFS برای هر مولفه همبندی در این تابع اجرا می شود.
 ! توجه : این پیاده سازی برای گراف هایی که یال چند گانه دارند ، درست کار نمی کند و این واضح است که این یال ها هم نمی توانند جواب باشند و تابع ()IS_BRIDGE چک می کند که یالی که قرار است برشی باشد، چند گانه است یا نه و اگر نبود، آن را نمایش می دهد.
+
+## مسائل تمرینی
+
+- [UVA #796 "Critical Links"](http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=737) [سختی: کم]
+- [UVA #610 "Street Directions"](http://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=551) [سختی: متوسط]
+- [Case of the Computer Network (Codeforces Round #310 Div. 1 E)](http://codeforces.com/problemset/problem/555/E) [سختی: زیاد]
+* [UVA 12363 - Hedge Mazes](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3785)
+* [UVA 315 - Network](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=251)
+* [GYM - Computer Network (J)](http://codeforces.com/gym/100114)
+* [SPOJ - King Graffs Defense](http://www.spoj.com/problems/GRAFFDEF/)
+* [SPOJ - Critical Edges](http://www.spoj.com/problems/EC_P/)
+* [Codeforces - Break Up](http://codeforces.com/contest/700/problem/C)
+* [Codeforces - Tourist Reform](http://codeforces.com/contest/732/problem/F)
