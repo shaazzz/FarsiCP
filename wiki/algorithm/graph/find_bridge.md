@@ -24,9 +24,9 @@ $$low[v] = \min \begin{cases} tin[v] \\\\ tin[p]& \text{ for all }p\text{ for wh
 2. وقتی که یک back edge به سمت بالا پیدا می کنیم.   
 3. وقتی که به پدر (parent) یک راس برمی گردیم. 
 
-* mark [u] = false -> این یال جزوی از درخت [DFS] است
-* mark [u] = true && u != parent -> این یال یک back edge به یکی از اجداد است
-* u = parent -> یال به سمت parent در درخت [DFS] برگشته است
+* visited [to] = false -> این یال جزوی از درخت [DFS] است
+* visited [to] = true && to != parent -> این یال یک back edge به یکی از اجداد است
+* to = parent -> یال به سمت parent در درخت [DFS] برگشته است
 برای پیاده سازی از الگوریتم [DFS] استفاده می کنیم برای اینکه برای هر راس پدرش رو پیدا و fix کنیم.
 
 ```C++
