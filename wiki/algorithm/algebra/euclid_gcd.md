@@ -20,7 +20,7 @@ Gcd(a, b) = max k : { k N : k | a , k | b }
 
 ## پیاده سازی
 ```C++
-ll gcd(ll a,ll b){ return (b == 0 ? a : gcd(b,a%b)); }
+int gcd(int a,int b){ return (b == 0 ? a : gcd(b,a%b)); }
 ```
 
 ## اثبات درستی
