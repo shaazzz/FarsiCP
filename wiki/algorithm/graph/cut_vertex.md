@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: Wiki
 ---
 
 #پیدا کردن راس های برشی از o(n + m)
