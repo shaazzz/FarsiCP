@@ -1,8 +1,10 @@
 {
   "/": "wiki/algorithm/",
   "/algebra/module-inverse.html": "wiki/algorithm/algebra/modular_inverse",
+  "/algebra/euclid-algorithm.html": "wiki/algorithm/algebra/euclid_gcd" ,
+  "/algebra/sieve-of-eratosthenes.html": "wiki/algorithm/algebra/sieve_eratosthenes",
   "/graph/breadth-first-search.html": "wiki/algorithm/graph/BFS",
   "/graph/strongly-connected-components.html": "wiki/algorithm/graph/SCC",
   "/graph/search-for-connected-components.html": "wiki/algorithm/graph/connected_components",
-  "/graph/bridge-searching.html": "/wiki/algorithm/graph/find_bridge"
+  "/graph/bridge-searching.html": "wiki/algorithm/graph/find_bridge"
 }
