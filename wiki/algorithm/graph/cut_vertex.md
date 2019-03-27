@@ -71,9 +71,9 @@ void find_cutpoints()
 * mark[u] = true && u != parent -> این یال یک  back edge  به یکی از اجداد است.
 * u = parent -> این یال به parent راس برمیگردد.
 
-# مسائل تمرینی
-*[UVA #10199 "Tourist Guide"](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=13&page=show_problem&problem=1140)
-*[UVA #315 "Network"](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=5&page=show_problem&problem=251)
-*[SPOJ - Submerging Islands](https://www.spoj.com/problems/SUBMERGE/)
+## مسائل تمرینی
+* [UVA #10199 "Tourist Guide"](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=13&page=show_problem&problem=1140)
+* [UVA #315 "Network"](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=5&page=show_problem&problem=251)
+* [SPOJ - Submerging Islands](https://www.spoj.com/problems/SUBMERGE/)
 
 [DFS]:DFS
