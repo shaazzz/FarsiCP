@@ -12,6 +12,7 @@ layout: Default
     * اعداد فیبوناچی
   * اعداد اول
     * [غربال اراتوستن](algebra/sieve_eratosthenes)
+    * [تجزیه اعداد](algebra/integer_factorization)
   * توابع نظریه اعدادی
     * تابع فی اویلر
     * تعداد و جمع مقسوم علیه ها
@@ -75,6 +76,6 @@ layout: Default
     * [جستجوی سطح اول](graph/BFS)
     * [جستجوی عمق اول](graph/DFS)
   * همبندی
-    * [مولفه های همبندی](graph/onnected_components)
+    * [مولفه های همبندی](graph/connected_components)
     * [پیدا کردن یال های برشی](graph/find_bridge)
     * [مولفه های قویا همبند و گراف آن](graph/SCC)
