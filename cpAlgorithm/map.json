@@ -3,7 +3,7 @@
   "/algebra/module-inverse.html": "wiki/algorithm/algebra/modular_inverse",
   "/algebra/euclid-algorithm.html": "wiki/algorithm/algebra/euclid_gcd" ,
   "/algebra/sieve-of-eratosthenes.html": "wiki/algorithm/algebra/sieve_eratosthenes",
-  "/algebra/factorization.html": "wiki/algorithm/algebra/integer_factorization.md",
+  "/algebra/factorization.html": "wiki/algorithm/algebra/integer_factorization",
   "/graph/breadth-first-search.html": "wiki/algorithm/graph/BFS",
   "/graph/strongly-connected-components.html": "wiki/algorithm/graph/SCC",
   "/graph/search-for-connected-components.html": "wiki/algorithm/graph/connected_components",
