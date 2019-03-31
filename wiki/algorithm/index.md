@@ -78,4 +78,5 @@ layout: Default
   * همبندی
     * [مولفه های همبندی](graph/connected_components)
     * [پیدا کردن یال های برشی](graph/find_bridge)
+    * [پیدا کردن راس های برشی](graph/cut_vertex)
     * [مولفه های قویا همبند و گراف آن](graph/SCC)
