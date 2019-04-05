@@ -12,8 +12,10 @@ $ \phi (n)$ برابر است با تعداد اعداد طبیعی مانند $
 طبق اصل شمول و عدم شمول اگر S را مجموعه زیر مجموعه های عوامل اول n بنامیم آنگاه:  
 $ \phi(n) = \sum\limits_{R \subset S}(-1)^{|R|}\frac{n}{\prod\limits_{p \in R}p} $  
 یک $n$ از سیگما فاکتور می گیریم:  
-$ \phi(n) = n\sum\limits_{R \subset S}(-1)^{|R|}\frac{1}{\prod\limits_{p \in R}p} $
-که با کمی دقت می توان عبارت اول که حکم مساله بود را نتیجه گرفت.
+$ \phi(n) = n\sum\limits_{R \subset S}(-1)^{|R|}\frac{1}{\prod\limits_{p \in R}p} $  
+و می دانیم  
+$ \sum\limits_{R \subset S}(-1)^{|R|}\frac{1}{\prod\limits_{p \in R}p} = \prod\limits_{p|n}1-\frac{1}{p} $  
+پس حکم مساله نتیجه گرفته شد.  
 
 ## پیاده سازی
 این یک پیاده سازی با استفاده از تجزیه $n$ است در $O( \sqrt{n})$
