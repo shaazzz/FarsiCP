@@ -2,7 +2,7 @@
 layout: Wiki
 ---
 
-# الگوریتم $Dijkstra$
+# الگوریتم دایکسترا
 یک گراف جهت دار یا بدون جهت و وزن دار با $n$ راس و $m$ یال داریم که وزن تمام یال ها عددی مثبت است . همچنین یک راس شروع مانند $s$ هم داریم . می خواهیم کوتاه ترین مسیر از $S$ به هر راس دیگری را پیدا کنیم و این مسیر را نمایش بدهیم . کوتاه ترین مسیر در گراف وزن دار مسیری است که جمع وزن یال ها کمترین مقدار ممکن باشد . دقت کنید که ما برای حل این مساله نمی توانیم از $[BFS]$ استفاده کنیم چون گراف وزن دار است و وزنی که ما طی می کنیم مهم است نه تعداد یال ها .
 
 # الگوریتم
@@ -106,43 +106,43 @@ int main()
 ```
 
 # مسائل تمرینی 
-*[Timus - Ivan's Car](http://acm.timus.ru/problem.aspx?space=1&num=1930)
-*[Timus - Sightseeing Trip](http://acm.timus.ru/problem.aspx?space=1&num=1004)
-*[SPOJ - SHPATH](https://www.spoj.com/problems/SHPATH/)
-*[Codeforces - Dijkstra?](http://codeforces.com/problemset/problem/20/C)
-*[Codeforces - Shortest Path](http://codeforces.com/problemset/problem/59/E)
-*[Codeforces - Jzzhu and Cities](http://codeforces.com/problemset/problem/449/B)
-*[Codeforces - The Classic Problem](http://codeforces.com/problemset/problem/464/E)
-*[Codeforces - President and Roads](http://codeforces.com/problemset/problem/567/E)
-*[Codeforces - Complete The Graph](http://codeforces.com/problemset/problem/715/B)
-*[TopCoder - SkiResorts](https://community.topcoder.com/stat?c=problem_statement&pm=12468)
-*[TopCoder - MaliciousPath](https://community.topcoder.com/stat?c=problem_statement&pm=13596)
-*[SPOJ - Ada and Trip](https://www.spoj.com/problems/ADATRIP/)
-*[LA - 3850 - Here We Go(relians) Again](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1851)
+* [Timus - Ivan's Car](http://acm.timus.ru/problem.aspx?space=1&num=1930)
+* [Timus - Sightseeing Trip](http://acm.timus.ru/problem.aspx?space=1&num=1004)
+* [SPOJ - SHPATH](https://www.spoj.com/problems/SHPATH/)
+* [Codeforces - Dijkstra?](http://codeforces.com/problemset/problem/20/C)
+* [Codeforces - Shortest Path](http://codeforces.com/problemset/problem/59/E)
+* [Codeforces - Jzzhu and Cities](http://codeforces.com/problemset/problem/449/B)
+* [Codeforces - The Classic Problem](http://codeforces.com/problemset/problem/464/E)
+* [Codeforces - President and Roads](http://codeforces.com/problemset/problem/567/E)
+* [Codeforces - Complete The Graph](http://codeforces.com/problemset/problem/715/B)
+* [TopCoder - SkiResorts](https://community.topcoder.com/stat?c=problem_statement&pm=12468)
+* [TopCoder - MaliciousPath](https://community.topcoder.com/stat?c=problem_statement&pm=13596)
+* [SPOJ - Ada and Trip](https://www.spoj.com/problems/ADATRIP/)
+* [LA - 3850 - Here We Go(relians) Again](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1851)
 
-*[GYM - Destination Unknown (D)](http://codeforces.com/gym/100625)
-*[UVA 12950 - Even Obsession](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4829)
-*[GYM - Journey to Grece (A)](http://codeforces.com/gym/100753)
-*[UVA 13030 - Brain Fry](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=866&page=show_problem&problem=4918)
+* [GYM - Destination Unknown (D)](http://codeforces.com/gym/100625)
+* [UVA 12950 - Even Obsession](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=4829)
+* [GYM - Journey to Grece (A)](http://codeforces.com/gym/100753)
+* [UVA 13030 - Brain Fry](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=866&page=show_problem&problem=4918)
 
-*[UVA 1027 - Toll](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3468)
-*[UVA 11377 - Airport Setup](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2372)
-*[Codeforces - Dynamic Shortest Path](http://codeforces.com/problemset/problem/843/D)
-*[UVA 11813 - Shopping](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2913)
-*[UVA 11833 - Route Change](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=226&page=show_problem&problem=2933)
+* [UVA 1027 - Toll](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3468)
+* [UVA 11377 - Airport Setup](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2372)
+* [Codeforces - Dynamic Shortest Path](http://codeforces.com/problemset/problem/843/D)
+* [UVA 11813 - Shopping](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2913)
+* [UVA 11833 - Route Change](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=226&page=show_problem&problem=2933)
 
-*[SPOJ - Easy Dijkstra Problem](https://www.spoj.com/problems/EZDIJKST/en/)
-*[LA - 2819 - Cave Raider](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=820)
-*[UVA 12144 - Almost Shortest Path](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3296)
-*[UVA 12047 - Highest Paid Toll](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3198)
-*[UVA 11514 - Batman](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2509)
-*[Codeforces - Team Rocket Rises Again](http://codeforces.com/contest/757/problem/F)
-*[UVA - 11338 - Minefield](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2313)
-*[UVA 11374 - Airport Express](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2369)
-*[UVA 11097 - Poor My Problem](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2038)
-*[UVA 13172 - The music teacher](UVA 13172 - The music teacher)
-*[Codeforces - Dirty Arkady's Kitchen](http://codeforces.com/contest/827/problem/F)
-*[SPOJ - Delivery Route](https://www.spoj.com/problems/DELIVER/)
-*[SPOJ - Costly Chess](https://www.spoj.com/problems/CCHESS/)
+* [SPOJ - Easy Dijkstra Problem](https://www.spoj.com/problems/EZDIJKST/en/)
+* [LA - 2819 - Cave Raider](https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=820)
+* [UVA 12144 - Almost Shortest Path](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=3296)
+* [UVA 12047 - Highest Paid Toll](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=3198)
+* [UVA 11514 - Batman](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2509)
+* [Codeforces - Team Rocket Rises Again](http://codeforces.com/contest/757/problem/F)
+* [UVA - 11338 - Minefield](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2313)
+* [UVA 11374 - Airport Express](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2369)
+* [UVA 11097 - Poor My Problem](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2038)
+* [UVA 13172 - The music teacher](UVA 13172 - The music teacher)
+* [Codeforces - Dirty Arkady's Kitchen](http://codeforces.com/contest/827/problem/F)
+* [SPOJ - Delivery Route](https://www.spoj.com/problems/DELIVER/)
+* [SPOJ - Costly Chess](https://www.spoj.com/problems/CCHESS/)
 
-[BFS] : BFS
+[BFS]:BFS
