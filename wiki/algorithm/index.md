@@ -13,8 +13,9 @@ layout: Default
   * اعداد اول
     * [غربال اراتوستن](algebra/sieve_eratosthenes)
     * [تجزیه اعداد](algebra/integer_factorization)
+    * [تست اول بودن عدد](algebra/primality_test)
   * توابع نظریه اعدادی
-    * تابع فی اویلر
+    * [تابع فی اویلر](algebra/Euler_function)
     * تعداد و جمع مقسوم علیه ها
   * حساب پیمانه ای
     * [معکوس پیمانه ای](algebra/modular_inverse)
@@ -80,3 +81,5 @@ layout: Default
     * [پیدا کردن یال های برشی](graph/find_bridge)
     * [پیدا کردن راس های برشی](graph/cut_vertex)
     * [مولفه های قویا همبند و گراف آن](graph/SCC)
+  * مساله کوتاه ترین مسیر
+    * [الگوریتم دایکسترا](graph/Dijkstra)
