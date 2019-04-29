@@ -10,5 +10,6 @@
   "/graph/strongly-connected-components.html": "wiki/algorithm/graph/SCC",
   "/graph/search-for-connected-components.html": "wiki/algorithm/graph/connected_components",
   "/graph/dijkstra.html": "wiki/algorithm/graph/Dijkstra",
+  "/graph/01_bfs.html": "wiki/algorithm/graph/01_BFS",
   "/graph/bridge-searching.html": "wiki/algorithm/graph/find_bridge"
 }
