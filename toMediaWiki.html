@@ -1,0 +1,36 @@
+---
+layout: Default
+---
+
+<textarea id="input"></textarea>
+<button id="convert">convert</button>
+<textarea id="output"></textarea>
+
+<script>
+document.getElementById('convert').onclick = ()=>{
+	let txt = document.getElementById('input').value;
+	txt = txt.replace(/\[[^[]*\]\([^(]*\)/g,s=>{
+		s = s.split('](');
+		s[0] = s[0].replace('[','');
+		s[1] = s[1].replace(')','');
+		return `[${s[1]} ${s[0]}]`;
+	});
+	let ans = "";
+	let isStart = 1;
+	for (let i=0;i<txt.length;i++) {
+		if (txt[i] == '$') {
+			if (isStart) {
+				ans += '<math>';
+			}
+			else {
+				ans += '</math>';
+			}
+			isStart ^= 1;
+		}
+		else {
+			ans += txt[i];
+		}
+	}
+	document.getElementById('output').value = ans;
+}
+</script>
