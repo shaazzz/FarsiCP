@@ -9,6 +9,9 @@ layout: Default
 <script>
 document.getElementById('convert').onclick = ()=>{
 	let txt = document.getElementById('input').value;
+	txt = txt.replace(/####[^\n]*\n/g,x=>`== ${x.substring(4,x.length-1)} ==\n`);
+	txt = txt.replace(/###[^\n]*\n/g,x=>`== ${x.substring(3,x.length-1)} ==\n`);
+	txt = txt.replace(/##[^\n]*\n/g,x=>`== ${x.substring(2,x.length-1)} ==\n`);
 	txt = txt.replace('```C++','<source lang = "c++" >');
 	txt = txt.replace('```','</source>');
 	txt = txt.replace(/\[[^[]*\]\([^(]*\)/g,s=>{
